@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SampleStore</string>
+    <string name="label_username">Usuario</string>
+    <string name="label_pass">Contraseña</string>
+    <string name="placeholder_user">Escriba el usuario</string>
+    <string name="placeholder_pass">Escriba la contraseña</string>
+    <string name="btn_login">Iniciar Sesión</string>
+    <string name="error_login">Login incorrecto</string>
+    <string name="hello_text">Hola</string>
+    <string name="default_input_text">Entre el nuevo valor</string>
+    <string name="update_button_text">Actualizar</string>
+    <string name="error_empty_field">Debe escribirse un valor</string>
+
+</resources>
