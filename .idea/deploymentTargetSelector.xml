@@ -8,7 +8,7 @@
       <SelectionState runConfigName="LoginActivity">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LoginActivity (1)">
+      <SelectionState runConfigName="Tests in 'com.example.samplestore.tests'">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
