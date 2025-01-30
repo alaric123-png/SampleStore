@@ -24,12 +24,10 @@ class LoginActivity : AppCompatActivity() {
             val password = passwordField.text.toString()
 
             if (username == "Espresso" && password == "Prueba") {
-                // Login exitoso, ocultar mensaje de error si está visible
                 errorTextView.visibility = View.GONE
                 val intent = Intent(this, SecondActivity::class.java)
                 startActivity(intent)
             } else {
-                // Mostrar mensaje de error
                 errorTextView.text = getString(R.string.error_login)
                 errorTextView.visibility = View.VISIBLE
             }

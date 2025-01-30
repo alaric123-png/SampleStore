@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleStore">
 
-        <!-- Declarar LoginActivity como la actividad principal -->
+
         <activity android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <!-- Declarar otras actividades -->
+
 
         <activity android:name=".SecondActivity"/>
     </application>

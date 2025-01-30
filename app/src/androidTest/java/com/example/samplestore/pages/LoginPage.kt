@@ -22,7 +22,4 @@ object LoginPage {
         EspressoHelper.verifyViewDisplayed(R.id.error_message)
     }
 
-   fun verifyScreenTransitionToSecond() {
-        EspressoHelper.verifyViewDisplayed(R.id.)
-    }
 }

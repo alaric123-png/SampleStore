@@ -1,6 +1,6 @@
 package com.example.samplestore.pages
 
-import androidx.appcompat.app.AppCompatActivity
+import androidx.test.platform.app.InstrumentationRegistry
 import com.example.samplestore.R
 import com.example.samplestore.utils.EspressoHelper
 
@@ -26,5 +26,11 @@ class SecondActPage {
     fun verifyErrorHidden() {
         EspressoHelper.verifyVisibility(R.id.errorTextView, false)
     }
+    fun getHelloText(): String {
+        return InstrumentationRegistry.getInstrumentation().targetContext.getString(R.string.hello_text)
+    }
 
+    fun getErrorText(): String {
+        return InstrumentationRegistry.getInstrumentation().targetContext.getString(R.string.error_empty_field)
+    }
 }

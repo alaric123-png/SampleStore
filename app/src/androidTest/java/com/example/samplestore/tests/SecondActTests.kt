@@ -1,9 +1,7 @@
 package com.example.samplestore.tests
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.rules.ActivityScenarioRule
-import com.example.samplestore.R
 import org.junit.FixMethodOrder
 import org.junit.runners.MethodSorters
 import com.example.samplestore.SecondActivity
@@ -19,7 +17,6 @@ class SecondActTests {
     var activityRule = ActivityScenarioRule(SecondActivity::class.java)
 
     private val page = SecondActPage()
-    private val context = InstrumentationRegistry.getInstrumentation().targetContext
     private fun generateRandomText(): String {
         val allowedChars = ('A'..'Z') + ('a'..'z') + ('0'..'9')
         return (3..15).random()
@@ -30,7 +27,7 @@ class SecondActTests {
 
     @Test
     fun test01_ElementsDisplayed() {
-        val helloText = context.getString(R.string.hello_text)
+        val helloText = page.getHelloText()
         page.verifyUpdatedText(helloText)
         page.verifyErrorHidden()
     }
@@ -46,7 +43,7 @@ class SecondActTests {
 
     @Test
     fun test03_EmptyFieldError() {
-        val errorText = context.getString(R.string.error_empty_field)
+        val errorText = page.getErrorText()
         page.clickUpdateButton()
         page.verifyErrorMessage(errorText)
     }

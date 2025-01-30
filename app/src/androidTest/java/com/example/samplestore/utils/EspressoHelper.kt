@@ -6,6 +6,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 
 
+
 object EspressoHelper {
     fun enterTextById(viewId: Int, text: String) {
         onView(withId(viewId)).perform(replaceText(text), closeSoftKeyboard())
@@ -27,7 +28,6 @@ object EspressoHelper {
         val visibilityMatcher = if (isVisible) withEffectiveVisibility(Visibility.VISIBLE) else withEffectiveVisibility(Visibility.GONE)
         onView(withId(viewId)).check(matches(visibilityMatcher))
     }
-
 
 }
 
